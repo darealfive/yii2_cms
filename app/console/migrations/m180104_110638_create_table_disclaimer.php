@@ -1,16 +1,16 @@
 <?php
 
 use yii\db\Migration;
-use common\models\Agb;
+use common\models\Disclaimer;
 
 /**
- * Class m180103_125812_create_table_agb
+ * Class m180104_110638_create_table_disclaimer
  */
-class m180103_125812_create_table_agb extends Migration
+class m180104_110638_create_table_disclaimer extends Migration
 {
     public function safeUp()
     {
-        $this->createTable(Agb::tableName(), [
+        $this->createTable(Disclaimer::tableName(), [
             'id'         => $this->primaryKey(),
             'text'       => $this->text()->notNull(),
             'created_at' => $this->timestamp()->notNull()->defaultExpression('current_timestamp'),
@@ -20,7 +20,7 @@ class m180103_125812_create_table_agb extends Migration
 
     public function safeDown()
     {
-        $this->dropTable(Agb::tableName());
+        $this->dropTable(Disclaimer::tableName());
 
         return true;
     }
