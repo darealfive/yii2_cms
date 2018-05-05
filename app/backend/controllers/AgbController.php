@@ -4,6 +4,7 @@ namespace backend\controllers;
 
 use Yii;
 use yii\filters\VerbFilter;
+use yii\web\NotFoundHttpException;
 use backend\models\Agb;
 use backend\models\search\Agb as AgbSearch;
 
@@ -49,6 +50,7 @@ class AgbController extends Controller
      * @param integer $id
      *
      * @return mixed
+     * @throws NotFoundHttpException
      */
     public function actionView($id)
     {
@@ -83,6 +85,7 @@ class AgbController extends Controller
      * @param integer $id
      *
      * @return mixed
+     * @throws NotFoundHttpException
      */
     public function actionUpdate($id)
     {
@@ -104,6 +107,8 @@ class AgbController extends Controller
      * @param integer $id
      *
      * @return mixed
+     * @throws \Throwable
+     * @throws \yii\db\StaleObjectException
      */
     public function actionDelete($id)
     {
