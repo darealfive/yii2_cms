@@ -32,7 +32,7 @@ SbAdmin2Asset::register($this);
 <div id="wrapper">
     <?php
     NavBar::begin([
-        'brandLabel'           => 'My Company',
+        'brandLabel'           => Yii::$app->name,
         'brandUrl'             => Yii::$app->homeUrl,
         'renderInnerContainer' => false,
         'containerOptions'     => ['tag' => false],
