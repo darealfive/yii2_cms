@@ -24,6 +24,11 @@ abstract class Controller extends \common\controllers\Controller
                 'url'   => ['disclaimer/index'],
                 'icon'  => 'fa fa-book fa-fw',
             ],
+            [
+                'label' => 'Navigation',
+                'url'   => ['navigation/index'],
+                'icon'  => 'fa fa-bars fa-fw',
+            ],
         ];
     }
 }
