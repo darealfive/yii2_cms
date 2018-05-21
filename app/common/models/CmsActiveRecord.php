@@ -20,7 +20,7 @@ class CmsActiveRecord extends ActiveRecord
             parent::behaviors(),
             [
                 [
-                    'class'              => TimestampBehavior::className(),
+                    'class'              => TimestampBehavior::class,
                     'createdAtAttribute' => false,
                     'value'              => new Expression('NOW()'),
                 ]
