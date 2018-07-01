@@ -1,12 +1,11 @@
 <?php
 
-use yii\db\Migration;
 use common\models\Disclaimer;
 
 /**
  * Class m180104_110638_create_table_disclaimer
  */
-class m180104_110638_create_table_disclaimer extends Migration
+class m180104_110638_create_table_disclaimer extends \console\components\Migration
 {
     public function safeUp()
     {
@@ -14,8 +13,8 @@ class m180104_110638_create_table_disclaimer extends Migration
             'id'         => $this->primaryKey(),
             'text'       => $this->text()->notNull(),
             'created_at' => $this->timestamp()->notNull()->defaultExpression('current_timestamp'),
-            'updated_at' => $this->timestamp()->notNull()
-        ]);
+            'updated_at' => $this->timestamp()->notNull()->defaultExpression('current_timestamp')
+        ], $this->tableOptions);
     }
 
     public function safeDown()
