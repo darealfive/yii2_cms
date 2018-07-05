@@ -26,6 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'id',
             'title:text',
+            'parent.title:text:Parent Title',
             'created_at:datetime',
             'updated_at:datetime',
 
