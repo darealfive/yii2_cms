@@ -3,6 +3,7 @@
 use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\widgets\Pjax;
+use backend\models\Navigation;
 
 /* @var $this yii\web\View */
 /* @var $searchModel \backend\models\search\Navigation */
@@ -30,7 +31,14 @@ $this->params['breadcrumbs'][] = $this->title;
             'created_at:datetime',
             'updated_at:datetime',
 
-            ['class' => 'yii\grid\ActionColumn'],
+            [
+                'class'          => 'yii\grid\ActionColumn',
+                'visibleButtons' => [
+                    'delete' => function (Navigation $model, $key, $index) {
+                        return $model->getChildren()->count() == 0;
+                    }
+                ]
+            ],
         ],
     ]); ?>
     <?php Pjax::end(); ?></div>
