@@ -4,7 +4,7 @@ namespace frontend\controllers;
 
 use frontend\models\Agb;
 
-class AgbController extends \common\controllers\Controller
+class AgbController extends Controller
 {
     public function actionIndex()
     {
@@ -12,5 +12,4 @@ class AgbController extends \common\controllers\Controller
             'model' => Agb::find()->one()
         ]);
     }
-
 }
