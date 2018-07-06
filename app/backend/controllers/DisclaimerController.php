@@ -18,14 +18,14 @@ class DisclaimerController extends Controller
      */
     public function behaviors()
     {
-        return [
+        return array_merge(parent::behaviors(), [
             'verbs' => [
                 'class'   => VerbFilter::class,
                 'actions' => [
                     'delete' => ['post'],
                 ],
             ],
-        ];
+        ]);
     }
 
     /**

@@ -2,6 +2,8 @@
 
 namespace backend\controllers;
 
+use yii\filters\AccessControl;
+
 /**
  * Class SiteController
  *
@@ -10,6 +12,21 @@ namespace backend\controllers;
 abstract class Controller extends \common\controllers\Controller
 {
     public $layout = 'sb-admin-2';
+
+    public function behaviors()
+    {
+        return array_merge(parent::behaviors(), array(
+            'access' => [
+                'class' => AccessControl::class,
+                'rules' => [
+                    [
+                        'allow' => true,
+                        'roles' => ['@']
+                    ],
+                ],
+            ],
+        ));
+    }
 
     public function getMenu()
     {
