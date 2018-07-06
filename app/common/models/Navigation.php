@@ -17,7 +17,7 @@ use yii\db\ActiveQuery;
  * @property Navigation   $parent   the parent navigation element
  * @property Navigation[] $children the child navigation elements
  */
-class Navigation extends CmsActiveRecord
+abstract class Navigation extends CmsActiveRecord
 {
     /**
      * @inheritdoc
@@ -57,7 +57,7 @@ class Navigation extends CmsActiveRecord
      */
     public function getParent()
     {
-        return $this->hasOne(Navigation::class, ['id' => 'parent_id']);
+        return $this->hasOne(static::class, ['id' => 'parent_id']);
     }
 
     /**
@@ -65,6 +65,6 @@ class Navigation extends CmsActiveRecord
      */
     public function getChildren()
     {
-        return $this->hasMany(Navigation::class, ['parent_id' => 'id']);
+        return $this->hasMany(static::class, ['parent_id' => 'id']);
     }
 }
