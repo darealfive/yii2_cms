@@ -9,7 +9,7 @@ namespace common\models;
  * @property string  $text
  * @property string  $created_at
  */
-class Disclaimer extends CmsActiveRecord
+class Disclaimer extends ActiveRecord
 {
     /**
      * @inheritdoc

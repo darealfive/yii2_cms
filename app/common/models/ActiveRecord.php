@@ -3,7 +3,7 @@
 namespace common\models;
 
 use yii\db\Expression;
-use yii\db\ActiveRecord;
+use yii\db\ActiveRecord as BaseActiveRecord;
 use yii\behaviors\TimestampBehavior;
 
 /**
@@ -12,7 +12,7 @@ use yii\behaviors\TimestampBehavior;
  * @package app\modules\cms\components
  * @property string $updated_at
  */
-class CmsActiveRecord extends ActiveRecord
+class ActiveRecord extends BaseActiveRecord
 {
     public function behaviors()
     {

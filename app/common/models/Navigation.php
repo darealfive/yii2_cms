@@ -17,7 +17,7 @@ use yii\db\ActiveQuery;
  * @property Navigation   $parent   the parent navigation element
  * @property Navigation[] $children the child navigation elements
  */
-abstract class Navigation extends CmsActiveRecord
+abstract class Navigation extends ActiveRecord
 {
     /**
      * @inheritdoc
