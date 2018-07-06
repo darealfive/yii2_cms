@@ -13,7 +13,7 @@ use dosamigos\tinymce\TinyMce;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'text')->widget(TinyMce::className(), [
+    <?= $form->field($model, 'text')->widget(TinyMce::class, [
         'options'       => ['rows' => 6, 'id' => 'agb-text', 'theme' => 'advanced',],
         'language'      => 'de',
         'clientOptions' => [
