@@ -10,6 +10,7 @@ use yii\db\ActiveQuery;
  * @property integer      $id
  * @property integer      $parent_id
  * @property string       $title
+ * @property int          $position
  * @property string       $created_at
  * @property string       $updated_at
  *
@@ -36,6 +37,7 @@ abstract class Navigation extends ActiveRecord
             [['parent_id'], 'exist', 'targetAttribute' => 'id'],
             [['title'], 'required'],
             [['title'], 'string'],
+            [['position'], 'integer'],
         ];
     }
 
@@ -47,6 +49,7 @@ abstract class Navigation extends ActiveRecord
         return [
             'id'         => 'ID',
             'title'      => 'Title',
+            'position'   => 'Position',
             'created_at' => 'Created At',
             'updated_at' => 'Updated At',
         ];
