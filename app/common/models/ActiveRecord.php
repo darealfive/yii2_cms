@@ -12,7 +12,7 @@ use yii\behaviors\TimestampBehavior;
  * @package app\modules\cms\components
  * @property string $updated_at
  */
-class ActiveRecord extends BaseActiveRecord
+abstract class ActiveRecord extends BaseActiveRecord
 {
     public function behaviors()
     {
