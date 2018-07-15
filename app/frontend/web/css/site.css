@@ -96,7 +96,7 @@ a.desc:after {
 
 /* style the navbar */
 .navbar.navbar-default {
-    background-color:inherit;
+    background-color:white;
 }
 
 /* align the logout "link" (button in form) of the navbar */
