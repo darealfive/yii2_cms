@@ -2,29 +2,11 @@
 
 namespace frontend\controllers;
 
-use yii\filters\VerbFilter;
-
 /**
  * Site controller
  */
 class SiteController extends Controller
 {
-    /**
-     * @inheritdoc
-     */
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class'   => VerbFilter::class,
-                'actions' => [
-                    'index' => ['get'],
-                    'about' => ['get']
-                ],
-            ],
-        ];
-    }
-
     /**
      * @inheritdoc
      */
