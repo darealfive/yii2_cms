@@ -27,8 +27,9 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => Yii::$app->name,
-        'options'    => [
+        'brandLabel'           => Yii::$app->name,
+        'renderInnerContainer' => false,
+        'options'              => [
             'class' => 'navbar-default navbar-fixed-top',
         ],
     ]);
