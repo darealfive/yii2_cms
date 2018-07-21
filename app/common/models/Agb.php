@@ -8,7 +8,7 @@ namespace common\models;
  * @property int    $id
  * @property string $text
  */
-class Agb extends ActiveRecord
+abstract class Agb extends ActiveRecord
 {
     /**
      * @inheritdoc

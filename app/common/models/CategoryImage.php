@@ -15,7 +15,7 @@ use yii\db\ActiveQuery;
  * @property Category $category
  * @property Image    $image
  */
-class CategoryImage extends \yii\db\ActiveRecord
+abstract class CategoryImage extends \yii\db\ActiveRecord
 {
     /**
      * {@inheritdoc}

@@ -8,7 +8,7 @@ namespace common\models;
  * @property int    $id
  * @property string $text
  */
-class Disclaimer extends ActiveRecord
+abstract class Disclaimer extends ActiveRecord
 {
     /**
      * @inheritdoc
