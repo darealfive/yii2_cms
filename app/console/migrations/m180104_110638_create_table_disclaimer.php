@@ -1,11 +1,12 @@
 <?php
 
+use console\components\Migration;
 use common\models\Disclaimer;
 
 /**
  * Class m180104_110638_create_table_disclaimer
  */
-class m180104_110638_create_table_disclaimer extends \console\components\Migration
+class m180104_110638_create_table_disclaimer extends Migration
 {
     public function safeUp()
     {

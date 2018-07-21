@@ -90,7 +90,7 @@ class Migration extends \yii\db\Migration
 
     /**
      * Builds index name in the following schema:
-     * IX<table>-<column>-<nextColumn>
+     * IX__<table>-<column>-<nextColumn>
      *
      * @param $table
      * @param $columns

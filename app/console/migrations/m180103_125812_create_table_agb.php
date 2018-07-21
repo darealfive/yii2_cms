@@ -1,11 +1,12 @@
 <?php
 
+use console\components\Migration;
 use common\models\Agb;
 
 /**
  * Class m180103_125812_create_table_agb
  */
-class m180103_125812_create_table_agb extends \console\components\Migration
+class m180103_125812_create_table_agb extends Migration
 {
     public function safeUp()
     {

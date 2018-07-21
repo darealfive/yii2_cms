@@ -1,11 +1,12 @@
 <?php
 
+use console\components\Migration;
 use common\models\Navigation;
 
 /**
  * Class m180520_121726_create_table_navigation
  */
-class m180520_121726_create_table_navigation extends \console\components\Migration
+class m180520_121726_create_table_navigation extends Migration
 {
     /**
      * {@inheritdoc}
