@@ -10,6 +10,7 @@ use yii\behaviors\TimestampBehavior;
  * Class CmsActiveRecord
  *
  * @package app\modules\cms\components
+ * @property string $created_at
  * @property string $updated_at
  */
 abstract class ActiveRecord extends BaseActiveRecord
@@ -20,11 +21,21 @@ abstract class ActiveRecord extends BaseActiveRecord
             parent::behaviors(),
             [
                 [
-                    'class'              => TimestampBehavior::class,
-                    'createdAtAttribute' => false,
-                    'value'              => new Expression('NOW()'),
+                    'class' => TimestampBehavior::class,
+                    'value' => new Expression('NOW()'),
                 ]
             ]
         );
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function attributeLabels()
+    {
+        return [
+            'created_at' => 'Created At',
+            'updated_at' => 'Updated At',
+        ];
     }
 }

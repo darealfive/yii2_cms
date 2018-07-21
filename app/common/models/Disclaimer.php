@@ -5,9 +5,8 @@ namespace common\models;
 /**
  * This is the model class for table "disclaimer".
  *
- * @property integer $id
- * @property string  $text
- * @property string  $created_at
+ * @property int    $id
+ * @property string $text
  */
 class Disclaimer extends ActiveRecord
 {
@@ -35,11 +34,9 @@ class Disclaimer extends ActiveRecord
      */
     public function attributeLabels()
     {
-        return [
-            'id'         => 'ID',
-            'text'       => 'Text',
-            'created_at' => 'Created At',
-            'updated_at' => 'Updated At',
-        ];
+        return array_merge(parent::attributeLabels(), [
+            'id'   => 'ID',
+            'text' => 'Text',
+        ]);
     }
 }

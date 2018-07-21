@@ -7,12 +7,10 @@ use yii\db\ActiveQuery;
 /**
  * This is the model class for table "navigation".
  *
- * @property integer      $id
- * @property integer      $parent_id
+ * @property int          $id
+ * @property int          $parent_id
  * @property string       $title
  * @property int          $position
- * @property string       $created_at
- * @property string       $updated_at
  *
  * The followings are the available model relations:
  * @property Navigation   $parent   the parent navigation element
@@ -46,13 +44,11 @@ abstract class Navigation extends ActiveRecord
      */
     public function attributeLabels()
     {
-        return [
-            'id'         => 'ID',
-            'title'      => 'Title',
-            'position'   => 'Position',
-            'created_at' => 'Created At',
-            'updated_at' => 'Updated At',
-        ];
+        return array_merge(parent::attributeLabels(), [
+            'id'       => 'ID',
+            'title'    => 'Title',
+            'position' => 'Position',
+        ]);
     }
 
     /**
