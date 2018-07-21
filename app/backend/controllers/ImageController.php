@@ -5,16 +5,16 @@ namespace backend\controllers;
 use Yii;
 use yii\filters\VerbFilter;
 use yii\web\NotFoundHttpException;
-use backend\models\Agb;
-use backend\models\search\Agb as AgbSearch;
+use backend\models\Image;
+use backend\models\search\Image as ImageSearch;
 
 /**
- * AgbController implements the CRUD actions for Agb model.
+ * ImageController implements the CRUD actions for Image model.
  */
-class AgbController extends Controller
+class ImageController extends Controller
 {
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function behaviors()
     {
@@ -29,13 +29,13 @@ class AgbController extends Controller
     }
 
     /**
-     * Lists all Agb models.
+     * Lists all Image models.
      *
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel  = new AgbSearch();
+        $searchModel  = new ImageSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -45,12 +45,12 @@ class AgbController extends Controller
     }
 
     /**
-     * Displays a single Agb model.
+     * Displays a single Image model.
      *
      * @param integer $id
      *
      * @return mixed
-     * @throws NotFoundHttpException
+     * @throws NotFoundHttpException if the model cannot be found
      */
     public function actionView($id)
     {
@@ -60,53 +60,54 @@ class AgbController extends Controller
     }
 
     /**
-     * Creates a new Agb model.
+     * Creates a new Image model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      *
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Agb();
-
+        $model = new Image();
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+
             return $this->redirect(['view', 'id' => $model->id]);
-        } else {
-            return $this->render('create', [
-                'model' => $model,
-            ]);
         }
+
+        return $this->render('create', [
+            'model' => $model,
+        ]);
     }
 
     /**
-     * Updates an existing Agb model.
+     * Updates an existing Image model.
      * If update is successful, the browser will be redirected to the 'view' page.
      *
      * @param integer $id
      *
      * @return mixed
-     * @throws NotFoundHttpException
+     * @throws NotFoundHttpException if the model cannot be found
      */
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+
             return $this->redirect(['view', 'id' => $model->id]);
-        } else {
-            return $this->render('update', [
-                'model' => $model,
-            ]);
         }
+
+        return $this->render('update', [
+            'model' => $model,
+        ]);
     }
 
     /**
-     * Deletes an existing Agb model.
+     * Deletes an existing Image model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      *
      * @param integer $id
      *
      * @return mixed
+     * @throws NotFoundHttpException if the model cannot be found
      * @throws \Throwable
      * @throws \yii\db\StaleObjectException
      */
@@ -118,20 +119,20 @@ class AgbController extends Controller
     }
 
     /**
-     * Finds the Agb model based on its primary key value.
+     * Finds the Image model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      *
      * @param integer $id
      *
-     * @return Agb the loaded model
+     * @return Image the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Agb::findOne($id)) !== null) {
+        if (($model = Image::findOne($id)) !== null) {
             return $model;
-        } else {
-            throw new NotFoundHttpException('The requested page does not exist.');
         }
+
+        throw new NotFoundHttpException('The requested page does not exist.');
     }
 }

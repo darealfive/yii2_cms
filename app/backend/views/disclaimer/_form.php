@@ -5,7 +5,7 @@ use yii\widgets\ActiveForm;
 use dosamigos\tinymce\TinyMce;
 
 /* @var $this yii\web\View */
-/* @var $model \backend\models\Disclaimer */
+/* @var $model backend\models\Disclaimer */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 

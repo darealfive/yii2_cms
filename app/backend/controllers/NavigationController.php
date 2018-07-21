@@ -22,7 +22,7 @@ class NavigationController extends Controller
             'verbs' => [
                 'class'   => VerbFilter::class,
                 'actions' => [
-                    'delete' => ['post'],
+                    'delete' => ['POST'],
                 ],
             ],
         ]);
@@ -68,14 +68,14 @@ class NavigationController extends Controller
     public function actionCreate()
     {
         $model = new Navigation();
-
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+
             return $this->redirect(['view', 'id' => $model->id]);
-        } else {
-            return $this->render('create', [
-                'model' => $model,
-            ]);
         }
+
+        return $this->render('create', [
+            'model' => $model,
+        ]);
     }
 
     /**
@@ -90,14 +90,14 @@ class NavigationController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+
             return $this->redirect(['view', 'id' => $model->id]);
-        } else {
-            return $this->render('update', [
-                'model' => $model,
-            ]);
         }
+
+        return $this->render('update', [
+            'model' => $model,
+        ]);
     }
 
     /**
@@ -130,9 +130,10 @@ class NavigationController extends Controller
     protected function findModel($id)
     {
         if (($model = Navigation::findOne($id)) !== null) {
+
             return $model;
-        } else {
-            throw new NotFoundHttpException('The requested page does not exist.');
         }
+
+        throw new NotFoundHttpException('The requested page does not exist.');
     }
 }

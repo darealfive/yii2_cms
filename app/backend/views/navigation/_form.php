@@ -7,7 +7,7 @@ use kartik\select2\Select2;
 use backend\models\Navigation;
 
 /* @var $this yii\web\View */
-/* @var $model \backend\models\Navigation */
+/* @var $model backend\models\Navigation */
 /* @var $form yii\widgets\ActiveForm */
 
 $parents = Navigation::find()
