@@ -1,30 +1,30 @@
 <?php
 
 use console\components\Migration;
-use common\models\CategoryImage;
+use common\models\ImageCategory;
 use common\models\Category;
 use common\models\Image;
 
 /**
- * Class m180721_093309_create_table_category_image
+ * Class m180721_093309_create_table_image_category
  */
-class m180721_093309_create_table_category_image extends Migration
+class m180721_093309_create_table_image_category extends Migration
 {
     /**
      * {@inheritdoc}
      */
     public function safeUp()
     {
-        $this->createTable($tableName = CategoryImage::tableName(), [
-            'category_id' => $this->integer()->notNull(),
+        $this->createTable($tableName = ImageCategory::tableName(), [
             'image_id'    => $this->integer()->notNull(),
+            'category_id' => $this->integer()->notNull(),
             'sort'        => $this->smallInteger()->unsigned()->notNull(),
         ], $this->tableOptions);
 
         $this->addPrimaryKey($tableName, $tableName, ['category_id', 'image_id']);
 
-        $this->addForeignKeyAutoName($tableName, 'category_id', Category::tableName(), 'id', 'RESTRICT', 'CASCADE');
         $this->addForeignKeyAutoName($tableName, 'image_id', Image::tableName(), 'id', 'RESTRICT', 'CASCADE');
+        $this->addForeignKeyAutoName($tableName, 'category_id', Category::tableName(), 'id', 'RESTRICT', 'CASCADE');
 
         return true;
     }
@@ -34,7 +34,7 @@ class m180721_093309_create_table_category_image extends Migration
      */
     public function safeDown()
     {
-        $this->dropTable(CategoryImage::tableName());
+        $this->dropTable(ImageCategory::tableName());
 
         return true;
     }

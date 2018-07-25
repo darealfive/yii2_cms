@@ -12,7 +12,7 @@ use yii\db\ActiveQuery;
  * @property string          $alt
  *
  * The followings are the available model relations:
- * @property CategoryImage[] $categoryImages
+ * @property ImageCategory[] $imageCategories
  * @property Category[]      $categories
  */
 abstract class Image extends ActiveRecord
@@ -53,9 +53,9 @@ abstract class Image extends ActiveRecord
     /**
      * @return ActiveQuery
      */
-    public function getCategoryImages()
+    public function getImageCategories()
     {
-        return $this->hasMany(CategoryImage::class, ['image_id' => 'id']);
+        return $this->hasMany(ImageCategory::class, ['image_id' => 'id']);
     }
 
     /**
@@ -63,6 +63,6 @@ abstract class Image extends ActiveRecord
      */
     public function getCategories()
     {
-        return $this->hasMany(Category::class, ['id' => 'category_id'])->via('categoryImages');
+        return $this->hasMany(Category::class, ['id' => 'category_id'])->via('imageCategories');
     }
 }

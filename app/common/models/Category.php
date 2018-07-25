@@ -7,10 +7,12 @@ use yii\db\ActiveQuery;
 /**
  * This is the model class for table "category".
  *
- * @property int    $id
- * @property string $name
+ * @property int             $id
+ * @property string          $name
  *
  * The followings are the available model relations:
+ * @property ImageCategory[] $imageCategories
+ * @property Image[]         $images
  */
 abstract class Category extends ActiveRecord
 {
@@ -48,9 +50,9 @@ abstract class Category extends ActiveRecord
     /**
      * @return ActiveQuery
      */
-    public function getCategoryImages()
+    public function getImageCategories()
     {
-        return $this->hasMany(CategoryImage::class, ['category_id' => 'id']);
+        return $this->hasMany(ImageCategory::class, ['category_id' => 'id']);
     }
 
     /**
@@ -58,6 +60,6 @@ abstract class Category extends ActiveRecord
      */
     public function getImages()
     {
-        return $this->hasMany(Image::class, ['id' => 'image_id'])->via('categoryImages');
+        return $this->hasMany(Image::class, ['id' => 'image_id'])->via('imageCategories');
     }
 }
