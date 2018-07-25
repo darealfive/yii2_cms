@@ -21,17 +21,6 @@ abstract class Agb extends ActiveRecord
     /**
      * @inheritdoc
      */
-    public function rules()
-    {
-        return [
-            [['text'], 'required'],
-            [['text'], 'string'],
-        ];
-    }
-
-    /**
-     * @inheritdoc
-     */
     public function attributeLabels()
     {
         return array_merge(parent::attributeLabels(), [

@@ -14,6 +14,19 @@ namespace backend\models;
 class Navigation extends \common\models\Navigation
 {
     /**
+     * @inheritdoc
+     */
+    public function rules()
+    {
+        return [
+            [['parent_id'], 'exist', 'targetAttribute' => 'id'],
+            [['title'], 'required'],
+            [['title'], 'string'],
+            [['position'], 'integer'],
+        ];
+    }
+
+    /**
      * Before saving the record update the value of position dependent on whether the parent record has changed, to the
      * highest position available within the new Navigation record set automatically.
      *

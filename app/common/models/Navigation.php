@@ -29,19 +29,6 @@ abstract class Navigation extends ActiveRecord
     /**
      * @inheritdoc
      */
-    public function rules()
-    {
-        return [
-            [['parent_id'], 'exist', 'targetAttribute' => 'id'],
-            [['title'], 'required'],
-            [['title'], 'string'],
-            [['position'], 'integer'],
-        ];
-    }
-
-    /**
-     * @inheritdoc
-     */
     public function attributeLabels()
     {
         return array_merge(parent::attributeLabels(), [
