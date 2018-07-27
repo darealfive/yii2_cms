@@ -387,16 +387,16 @@
         },
         {
             "name": "kartik-v/bootstrap-fileinput",
-            "version": "v4.4.8",
+            "version": "v4.4.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/bootstrap-fileinput.git",
-                "reference": "7a2191d2b7ae65f5ca4ddb090a69d65805eb7edf"
+                "reference": "b6343494a53733bf827c28869baf4923a65b6711"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/7a2191d2b7ae65f5ca4ddb090a69d65805eb7edf",
-                "reference": "7a2191d2b7ae65f5ca4ddb090a69d65805eb7edf",
+                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/b6343494a53733bf827c28869baf4923a65b6711",
+                "reference": "b6343494a53733bf827c28869baf4923a65b6711",
                 "shasum": ""
             },
             "type": "library",
@@ -436,7 +436,7 @@
                 "progress",
                 "upload"
             ],
-            "time": "2018-04-11T10:34:10+00:00"
+            "time": "2018-07-25T16:54:29+00:00"
         },
         {
             "name": "kartik-v/yii2-krajee-base",
@@ -705,16 +705,16 @@
         },
         {
             "name": "tinymce/tinymce",
-            "version": "4.8.0",
+            "version": "4.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tinymce/tinymce-dist.git",
-                "reference": "0ca397b293d81cfb83de39c0952091233f6a6977"
+                "reference": "66308359bd3ff09996ed0e4121ca777c7f4ab508"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tinymce/tinymce-dist/zipball/0ca397b293d81cfb83de39c0952091233f6a6977",
-                "reference": "0ca397b293d81cfb83de39c0952091233f6a6977",
+                "url": "https://api.github.com/repos/tinymce/tinymce-dist/zipball/66308359bd3ff09996ed0e4121ca777c7f4ab508",
+                "reference": "66308359bd3ff09996ed0e4121ca777c7f4ab508",
                 "shasum": ""
             },
             "type": "component",
@@ -747,7 +747,7 @@
                 "tinymce",
                 "wysiwyg"
             ],
-            "time": "2018-07-11T08:59:33+00:00"
+            "time": "2018-07-26T06:38:42+00:00"
         },
         {
             "name": "yiisoft/yii2",
@@ -1227,16 +1227,16 @@
         },
         {
             "name": "codeception/stub",
-            "version": "2.0.1",
+            "version": "2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Codeception/Stub.git",
-                "reference": "b2eff325d8ff0b824ff659048be7be4e5767d7d0"
+                "reference": "5fe83b0a22dc1f28b811c517862e747bdb1a4139"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Codeception/Stub/zipball/b2eff325d8ff0b824ff659048be7be4e5767d7d0",
-                "reference": "b2eff325d8ff0b824ff659048be7be4e5767d7d0",
+                "url": "https://api.github.com/repos/Codeception/Stub/zipball/5fe83b0a22dc1f28b811c517862e747bdb1a4139",
+                "reference": "5fe83b0a22dc1f28b811c517862e747bdb1a4139",
                 "shasum": ""
             },
             "require": {
@@ -1256,7 +1256,7 @@
                 "MIT"
             ],
             "description": "Flexible Stub wrapper for PHPUnit's Mock Builder",
-            "time": "2018-05-18T14:33:08+00:00"
+            "time": "2018-07-24T17:06:30+00:00"
         },
         {
             "name": "codeception/verify",
@@ -2866,7 +2866,7 @@
         },
         {
             "name": "symfony/browser-kit",
-            "version": "v4.1.1",
+            "version": "v4.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/browser-kit.git",
@@ -2923,16 +2923,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v4.1.1",
+            "version": "v4.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "70591cda56b4b47c55776ac78e157c4bb6c8b43f"
+                "reference": "5c31f6a97c1c240707f6d786e7e59bfacdbc0219"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/70591cda56b4b47c55776ac78e157c4bb6c8b43f",
-                "reference": "70591cda56b4b47c55776ac78e157c4bb6c8b43f",
+                "url": "https://api.github.com/repos/symfony/console/zipball/5c31f6a97c1c240707f6d786e7e59bfacdbc0219",
+                "reference": "5c31f6a97c1c240707f6d786e7e59bfacdbc0219",
                 "shasum": ""
             },
             "require": {
@@ -2987,11 +2987,11 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2018-05-31T10:17:53+00:00"
+            "time": "2018-07-16T14:05:40+00:00"
         },
         {
             "name": "symfony/css-selector",
-            "version": "v4.1.1",
+            "version": "v4.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
@@ -3044,16 +3044,16 @@
         },
         {
             "name": "symfony/dom-crawler",
-            "version": "v4.1.1",
+            "version": "v4.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dom-crawler.git",
-                "reference": "3350cacf151b48d903114ab8f7a4ccb23e07e10a"
+                "reference": "eb501fa8aab8c8e2db790d8d0f945697769f6c41"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/3350cacf151b48d903114ab8f7a4ccb23e07e10a",
-                "reference": "3350cacf151b48d903114ab8f7a4ccb23e07e10a",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/eb501fa8aab8c8e2db790d8d0f945697769f6c41",
+                "reference": "eb501fa8aab8c8e2db790d8d0f945697769f6c41",
                 "shasum": ""
             },
             "require": {
@@ -3097,20 +3097,20 @@
             ],
             "description": "Symfony DomCrawler Component",
             "homepage": "https://symfony.com",
-            "time": "2018-05-01T23:02:13+00:00"
+            "time": "2018-07-05T11:54:23+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v4.1.1",
+            "version": "v4.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "2391ed210a239868e7256eb6921b1bd83f3087b5"
+                "reference": "00d64638e4f0703a00ab7fc2c8ae5f75f3b4020f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/2391ed210a239868e7256eb6921b1bd83f3087b5",
-                "reference": "2391ed210a239868e7256eb6921b1bd83f3087b5",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/00d64638e4f0703a00ab7fc2c8ae5f75f3b4020f",
+                "reference": "00d64638e4f0703a00ab7fc2c8ae5f75f3b4020f",
                 "shasum": ""
             },
             "require": {
@@ -3160,11 +3160,11 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2018-04-06T07:35:57+00:00"
+            "time": "2018-07-10T11:02:47+00:00"
         },
         {
             "name": "symfony/finder",
-            "version": "v4.1.1",
+            "version": "v4.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
@@ -3327,7 +3327,7 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v4.1.1",
+            "version": "v4.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
