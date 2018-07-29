@@ -542,12 +542,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-fileinput.git",
-                "reference": "c5495641c8a86690713eb562e544bf5eaaf727cb"
+                "reference": "f34ed0f94e7371b3905d7d2d3eccaf55a8790b0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-fileinput/zipball/c5495641c8a86690713eb562e544bf5eaaf727cb",
-                "reference": "c5495641c8a86690713eb562e544bf5eaaf727cb",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-fileinput/zipball/f34ed0f94e7371b3905d7d2d3eccaf55a8790b0e",
+                "reference": "f34ed0f94e7371b3905d7d2d3eccaf55a8790b0e",
                 "shasum": ""
             },
             "require": {
@@ -562,7 +562,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "kartik\\file\\": ""
+                    "kartik\\file\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -576,7 +576,7 @@
                     "homepage": "http://www.krajee.com/"
                 }
             ],
-            "description": "An enhanced FileInput widget for Bootstrap 3.x with file preview, multiple selection, and more features (sub repo split from yii2-widgets)",
+            "description": "An enhanced FileInput widget for Bootstrap 3.x & 4.x with file preview, multiple selection, and more features (sub repo split from yii2-widgets)",
             "homepage": "https://github.com/kartik-v/yii2-widget-fileinput",
             "keywords": [
                 "extension",
@@ -589,7 +589,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2017-12-06T12:34:31+00:00"
+            "time": "2018-07-26T11:13:31+00:00"
         },
         {
             "name": "kartik-v/yii2-widget-select2",
