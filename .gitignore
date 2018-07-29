@@ -1,6 +1,2 @@
-/.vagrant
 /.idea
-/config.yaml
 /README.md
-/setup.rb
-/Vagrantfile
