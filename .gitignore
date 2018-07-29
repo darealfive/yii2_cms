@@ -1,5 +1,5 @@
 /.idea
-/README.md
 /config
 /db
+/README.md
 /docker-compose.yml
