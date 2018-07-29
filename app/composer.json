@@ -41,7 +41,7 @@
         },
         {
             "type": "vcs",
-            "url":  "https://github.com/darealfive/yii2-media-module"
+            "url":  "https://github.com/darealfive/yii2-media"
         }
     ]
 }
