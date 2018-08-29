@@ -1,6 +1,8 @@
 <?php
 
-use console\components\Migration;
+namespace console\migrations;
+
+use darealfive\base\Migration;
 
 class m130524_201442_init extends Migration
 {

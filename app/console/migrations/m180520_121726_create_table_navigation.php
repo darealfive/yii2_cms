@@ -1,6 +1,8 @@
 <?php
 
-use console\components\Migration;
+namespace console\migrations;
+
+use darealfive\base\Migration;
 use common\models\Navigation;
 
 /**
