@@ -6,19 +6,29 @@ $params = array_merge(
     require __DIR__ . '/params-local.php'
 );
 
+/*
+ * modules
+ */
+$modules = require __DIR__ . '/modules.php';
+
+if (file_exists(($local = __DIR__ . '/modules-local.php'))) {
+
+    $modules = array_merge($modules, require $local);
+}
+
 return [
     'name'                => 'CMS',
     'id'                  => 'app-backend',
     'basePath'            => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap'           => ['log'],
-    'modules'             => [],
+    'modules'             => $modules,
     'components'          => [
         'request'      => [
             'csrfParam' => '_csrf-backend',
         ],
         'user'         => [
-            'identityClass'   => 'common\models\User',
+            'identityClass'   => common\models\User::class,
             'enableAutoLogin' => true,
             'identityCookie'  => ['name' => '_identity-backend', 'httpOnly' => true],
         ],
@@ -30,7 +40,7 @@ return [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets'    => [
                 [
-                    'class'  => 'yii\log\FileTarget',
+                    'class'  => yii\log\FileTarget::class,
                     'levels' => ['error', 'warning'],
                 ],
             ],
