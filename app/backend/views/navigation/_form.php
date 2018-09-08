@@ -26,9 +26,7 @@ $parents = ArrayHelper::map($parents, 'id', 'title');
     <?= $form->field($model, 'parent_id')->widget(Select2::class, [
         'data'          => $parents,
         'options'       => [
-            'options' => [
-                'placeholder' => 'Select a navigation ...'
-            ],
+            'placeholder' => 'Select a navigation ...'
         ],
         'pluginOptions' => [
             'allowClear' => true
