@@ -13,8 +13,4 @@ use yii\helpers\Inflector;
  */
 abstract class Controller extends \yii\web\Controller
 {
-    public function getPageHeader()
-    {
-        return Inflector::titleize($this->id);
-    }
 }
