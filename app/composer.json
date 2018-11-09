@@ -23,7 +23,8 @@
         "kartik-v/yii2-sortable": "@dev",
         "kartik-v/yii2-widget-fileinput": "@dev",
         "darealfive/yii2-media": "@dev",
-        "darealfive/yii2-base": "@dev"
+        "darealfive/yii2-base": "@dev",
+        "kartik-v/yii2-widget-growl": "*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
