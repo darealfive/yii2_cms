@@ -3,6 +3,14 @@ body {
     height: 100%;
 }
 
+.navbar-header {
+    /*float: left;*/
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+.navbar-brand {float:none;}
+
 .wrap {
     min-height: 100%;
     height: auto;
