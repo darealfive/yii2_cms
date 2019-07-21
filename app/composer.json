@@ -24,7 +24,8 @@
         "kartik-v/yii2-widget-fileinput": "@dev",
         "darealfive/yii2-media": "@dev",
         "darealfive/yii2-base": "@dev",
-        "kartik-v/yii2-widget-growl": "*"
+        "kartik-v/yii2-widget-growl": "*",
+        "yiisoft/yii2-bootstrap4": "^2.0"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
