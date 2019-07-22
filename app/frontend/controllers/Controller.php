@@ -17,6 +17,7 @@ use Yii;
  */
 abstract class Controller extends \common\controllers\Controller
 {
+    public $layout = 'main';
     /**
      * @var array main menu
      * @access private

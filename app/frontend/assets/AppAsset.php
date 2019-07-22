@@ -2,8 +2,9 @@
 
 namespace frontend\assets;
 
-use yii\web\AssetBundle;
+use yii\bootstrap4\BootstrapPluginAsset;
 use yii\bootstrap4\BootstrapAsset;
+use yii\web\AssetBundle;
 use yii\web\YiiAsset;
 
 /**
@@ -17,16 +18,12 @@ class AppAsset extends AssetBundle
 
     public $css = [
         'css/site.css',
-        'css/main_test.css',
-    ];
-
-    public $js = [
-        'js/main_test.js',
     ];
 
     public $depends = [
         YiiAsset::class,
+        LtIE9Asset::class,
         BootstrapAsset::class,
-        LtIE9Asset::class
+        BootstrapPluginAsset::class
     ];
 }

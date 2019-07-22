@@ -27,9 +27,13 @@ AppAsset::register($this);
 
     <?= $this->render('_top') ?>
 
-    <?= $content ?>
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <?= $content ?>
 
-    <?= $this->render('_footer') ?>
+            <?= $this->render('_footer') ?>
+        </div>
+    </div>
 
 </div><!--/.container -->
 
