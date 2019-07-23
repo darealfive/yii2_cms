@@ -1,9 +1,11 @@
-.wine-red
+/* TODO use SCSS */
+
+.wine-red /* TODO use theming */
 {
     color:#943a53;
 }
 
-.bright-grey
+.bright-grey /* TODO use theming */
 {
     color:#999;
 }
@@ -13,16 +15,26 @@ hr
     border-top:2px solid rgba(0, 0, 0, 0.2);
 }
 
+
+ul.navbar-nav > li.nav-item:not(:last-child)
+{
+    border-right:none;
+}
+
+@media (min-width:768px)/* TODO use bootstrap breakpoints */
+{
+    ul.navbar-nav > li.nav-item:not(:last-child)
+    {
+        border-right:1px solid #943a53;
+    }
+}
+
 ul.nav > li.nav-item:not(:last-child)
 {
     border-right:1px solid #943a53;
 }
 
-ul.navbar-nav > li.nav-item:not(:last-child)
-{
-    border-right:1px solid #943a53;
-}
 ul.navbar-nav > li.nav-item > a
 {
-    white-space: nowrap;
+    white-space:nowrap;
 }
