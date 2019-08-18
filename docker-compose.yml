@@ -10,7 +10,7 @@ services:
       - ./config/web/yii-dev.conf:/etc/nginx/conf.d/yii-dev.conf:ro
       - ./config/web/yii-prod.conf:/etc/nginx/conf.d/yii-prod.conf:ro
   php-fpm-server:
-    image: php7.2-mysql
+    image: php7.3-mysql
     volumes:
       - ./app:/www
       - ./config/php/custom.ini:/usr/local/etc/php/conf.d/custom.ini
