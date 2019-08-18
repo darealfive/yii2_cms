@@ -36,6 +36,21 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
+        'assetManager' => [
+            'class'   => 'yii\web\AssetManager',
+            'bundles' => [
+                'yii\bootstrap4\BootstrapAsset'       => [
+                    'css' => [
+                        YII_ENV_DEV ? 'css/bootstrap.css' : 'css/bootstrap.min.css',
+                    ]
+                ],
+                'yii\bootstrap4\BootstrapPluginAsset' => [
+                    'js' => [
+                        YII_ENV_DEV ? 'js/bootstrap.bundle.js' : 'js/bootstrap.bundle.min.js',
+                    ]
+                ]
+            ],
+        ],
         /*
         'urlManager' => [
             'enablePrettyUrl' => true,
