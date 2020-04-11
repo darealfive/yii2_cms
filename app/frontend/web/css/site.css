@@ -15,26 +15,49 @@ hr
     border-top:2px solid rgba(0, 0, 0, 0.2);
 }
 
-
-ul.navbar-nav > li.nav-item:not(:last-child)
+/* Submenu items uses full page width */
+div#mainNavbar > ul.navbar-nav > li.nav-item > div
 {
-    border-right:none;
+    position:absolute;
+    width:100%;
+    left:0;
 }
 
 @media (min-width:768px)/* TODO use bootstrap breakpoints */
 {
-    ul.navbar-nav > li.nav-item:not(:last-child)
+    div.navbar-collapse > ul.navbar-nav > li.nav-item:not(:last-child)
     {
         border-right:1px solid #943a53;
     }
 }
 
-ul.nav > li.nav-item:not(:last-child)
-{
-    border-right:1px solid #943a53;
-}
-
-ul.navbar-nav > li.nav-item > a
+ul.navbar-nav > li.nav-item > a.nav-link
 {
     white-space:nowrap;
+}
+
+ul.navbar-nav > li.nav-item > a.nav-link:hover
+{
+    color:#943a53;
+}
+
+ul.navbar-nav > li.nav-item > a.nav-link[aria-expanded="true"]
+{
+    font-weight: bolder;
+}
+
+ul.navbar-nav > li.nav-item > a.nav-link[data-toggle="collapse"]
+{
+    color:#943a53;
+}
+
+/* BOTTOM nav links */
+ul.nav > li.nav-item > a.nav-link
+{
+    color:rgba(0, 0, 0, 0.5);
+}
+
+ul.nav > li.nav-item > a.nav-link:hover
+{
+    color:#943a53;
 }
